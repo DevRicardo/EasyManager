@@ -1,0 +1,384 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23/09/2015, 05:43:13 PM
+    Author     : WISTON
+*/
+
+*{
+    margin: 0px; padding: 0px; border: 0px;
+}
+@font-face{
+    font-family: 'Aller';
+    src: url('fuentes/Aller/Aller_Rg.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Aller_lt';
+    src: url('fuentes/Aller/Aller_It.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Helvetica_LT_Condensed_Light';
+    src: url('fuentes/Helvetica_LT_Condensed_Light.eot');
+    src: url('fuentes/Helvetica_LT_Condensed_Light.eot?#iefix') format('embedded-opentype'),
+        url('fuentes/Helvetica_LT_Condensed_Light.ttf')format('truetype'),
+        url('fuentes/Helvetica_LT_Condensed_Light.svg#Helvetica_LT_Condensed_LightHelvetica_LT_Condensed_Light')format('svg'),
+        url('fuentes/Helvetica_LT_Condensed_Light.woff');
+}
+html,body{
+    font-family: Helvetica_LT_Condensed_Light;
+    background: url(../../img/fondo.png) repeat;
+    width: 100%;
+    height: 100px;
+}
+#header{
+    /*    background: url(../img/f_header.png) repeat-x;*/
+    background-color: #E6E2CD;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    border-bottom: #888 4px solid;
+}
+header{
+    width: 950px;
+    height: 100px;
+    margin: 0px auto;
+}
+#logo{
+    background-color: #fff;
+    width: 205px;
+    height: 99px;
+    float: left;
+}
+.line{
+    background-color: #888;
+    width: 100%;
+    height: 2px;
+}
+
+
+#slider_p{
+    /*background:url('../../img/familia2.jpg') no-repeat top center;*/
+    background-color: #005382;
+    width: 100%;
+    min-height: 350px;
+    background-size:cover;
+}
+#container{
+    width: 950px;
+    height: 350px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.mensaje{
+    background: rgba(0,0,0,0.7);
+    width: 250px;
+    height: 350px;
+    padding: 35px 25px;
+    box-sizing: border-box;
+    font-size: 30px;
+    color: #CCC;
+    float: left;
+}
+
+.autor-mnsj {
+    font-size: 18px;
+    color: #FFF;
+    margin: 30px 0px 0px 0px;
+    float: right;
+    text-shadow: 0px 0px 2px #fff;
+}
+.barra{
+    background: rgba(230,226,203,0.2);
+    width: 80px;
+    height: 350px;
+    float: right;
+}
+aside{
+    background-color: #59a4ff;
+    width: 100%;
+    height: 160px;
+    border-bottom: #888 solid 3px;
+}
+#link{
+    width: 950px;
+    height: 160px;
+    margin: 0px auto;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.txt_dona{
+    width: 450px;
+    height: auto;
+    color: #F3F3F3;
+    font-size: 18px;
+    text-shadow: 0px 0px 0.5px #FFF;
+    float: left;
+}
+#ayuda{
+    width: 450px;
+    height: 70px;
+    float: right;
+    overflow: hidden;
+    margin: 40px 0px 0px 0px;
+}
+.ayudar{
+    width: 220px;
+    height: 55px;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.8s;
+    -ms-transition: -ms-transform 0.8s;
+    -webkit-transition: -webkit-transform 0.8s;
+    -moz-transition: -moz-transform 0.8s;
+    -o-transition: -o-transform 0.8s;
+}
+.ayudar:first-child{
+    margin: 0px 10px 0px 0px;
+}
+.donar{
+    background:url(../../img/donar.png) no-repeat;
+}
+.voluntario{
+    background:url(../../img/ayudar.png) no-repeat;
+}
+.ayudar:hover{ 
+    transform:scale(1 , 1) rotate(5deg);
+    -webkit-transform:scale(1 , 1) rotate(5deg);
+    -moz-transform:scale(1 ,1) rotate(5deg);
+    -ms-transform:scale(1 ,1) rotate(5deg);
+    -o-transform:scale(1 ,1) rotate(5deg);
+} 
+#patrocinadores{
+    background-color: #EEE;
+    /*background: url(../../img/patrocinadores.png) no-repeat center center;*/
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#item_co{
+    width: 100%;
+    list-style: none;
+
+}
+#item_co li{
+    display: inline;
+    list-style-type: none;
+    margin-left: 10px;
+
+}
+
+footer{
+    /*    background-color: #EB0982;*/
+    background-color: #2B2B2B;
+    width: 100%;
+    height: 130px;
+    border-top: #888 solid 3px;
+}
+.footer{
+    width: 950px;
+    margin: 0px auto;
+}
+.contacto{
+    /*    border: #EEE dashed 1px;*/
+    color: #ccc;
+    width: 500px;
+    height: auto;
+    margin: 30px 0px 0px 0px;
+    float: left;
+    overflow: hidden;
+    font-size: 16px;
+    line-height:20px;
+    text-shadow: 0px 0px 0.5px #005382;
+}
+.t_cont{
+    color: #FFF212;
+    font-size: 16px;
+    margin: 0px 0px 5px 0px;
+}
+.redes{
+    /*    border: #ccc dashed 1px;*/
+    text-align: right;
+    width: 350px;
+    height: auto;
+    float: right;
+}
+.box-redes{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    float: right;
+    margin: 10px 0px 10px 0px;
+    clear: right;
+}
+.fb{
+    background: url(../../img/fb2.png);
+    width: 26px;
+    height: 26px;
+    float: left;
+    margin: 0px 15px 0px 0px;
+    /* position: relative; */
+}
+.tw{
+    background: url(../../img/tw2.png) no-repeat;
+    width: 26px;
+    height: 26px;
+    float: left;
+    margin: 0px 0px 0px 0px;
+}
+.inst{
+    background: url(../../img/inst2.png) no-repeat;
+    width: 26px;
+    height: 26px;
+    float: left;
+    margin: 0px 0px 0px 15px;
+}
+.fb:hover {
+    background-position: 0 -24px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition-delay:1s;
+}
+.director{
+    color: #ccc;
+    clear: right;
+    margin: 5px 0px;
+}
+
+
+
+/*Modal*/
+
+
+.modal-box {
+    background-color: #F3F3F3;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    width: 400px;
+    height: 480px;
+    margin: 0px auto;
+    border-radius: 4px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+}
+.t-donar{
+    background-color: #03c4c1;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0px 0px 0px;
+    box-sizing: border-box;
+    margin: 0px 0px 30px 0px;
+    
+}
+.cont-popup{
+    padding: 0px 30px;
+    box-sizing: border-box;
+}
+form.f-donar{
+    width: 320px;
+    margin: 0px auto;
+}
+form label{
+    width: 100%;
+    height: auto;
+    margin: 5px 0px;
+    float: left;
+}
+form input{
+    width: 300px;
+    padding: 8px 5px;
+    border-radius: 5px;
+
+}
+form input[type="submit"]{
+    background-color: #03c4c1;
+    color: #F3F3F3;
+    width: 130px;
+    height: 35px;
+    margin: 20px 10px 0px 0px;
+    float: right;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form input[type="submit"]:hover{
+    background-color:#005382;
+    color: #FFF;
+}
+
+.js-modal-close{
+    cursor: pointer;
+    color: #EC268F;
+   margin: 50px 0px 0px 0px;
+}
+
+/*
+.modal-overlay {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1200;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+a.close {
+    line-height: 1;
+    font-size: 1.5em;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    text-decoration: none;
+    color: #bbb;
+}
+
+a.close:hover {
+    color: #222;
+    -webkit-transition: color 1s ease;
+    -moz-transition: color 1s ease;
+    transition: color 1s ease;
+}
+.modal-box header,
+.modal-box .modal-header {
+  padding: 1.25em 1.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-box header h3,
+.modal-box header h4,
+.modal-box .modal-header h3,
+.modal-box .modal-header h4 { margin: 0; }
+
+.modal-box .modal-body { padding: 2em 1.5em; }
+
+.modal-box footer,
+.modal-box .modal-footer {
+  padding: 1em;
+  border-top: 1px solid #ddd;
+  background: rgba(0, 0, 0, 0.02);
+  text-align: right;
+}
+
+
+
+
+@media (min-width: 32em) {
+  .modal-box { width: 70%; }
+}*/
+
+/*Fin Modal*/

@@ -1,0 +1,67 @@
+
+/*-- Menu --*/
+#menu{
+    /*    background-color: #E6E2CD;*/
+    width: auto;
+    height: 55px;
+    float: right;
+    overflow: hidden;
+    margin: 45px 0px 0px 0px;
+}
+.c-menu li a{
+    text-decoration: none;
+}
+.list{
+    /*    background-color: #FFF;*/
+    width: 150px;
+    height: 55px;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    overflow: hidden;
+    border-left: 1px dotted #3D3D3D;
+}
+.list:first-child {
+    width: 90px;
+}
+.list:last-child{
+    width: 130px;
+}
+.list .opciones{
+    color: #005382;
+    text-decoration: none;
+    padding: 5px 0px 0px 10px;
+    box-sizing: border-box;
+}
+.list .opciones .opc{
+    font-family: chiller;
+    font-size: 19px;
+    color: #EC268F;
+}
+.list .opciones .opc-sub{
+    text-transform: lowercase;
+    letter-spacing: normal;
+    display: block;
+    font: italic 13px Aller_lt;
+    /*    font-family: 'Aller_lt';
+        font-size: 14px;
+        color: #4B4B4D;
+        text-shadow: 0px 0px 0.5px #000; */
+}
+
+.list:hover{
+    background-color: #E1DAC1;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}
+
+.opciones:hover{
+    color: #2b2b2b;
+    -webkit-transition: all 0.65s ease;
+    -moz-transition: all 0.65s ease;
+    -ms-transition: all 0.65s ease;
+    -o-transition: all 0.65s ease;
+    transition: all 0.65s ease;
+}

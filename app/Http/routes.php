@@ -12,7 +12,23 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $organizacion = \App\Organizacion::find(1);
+    $portadas = \App\Portada::all();
+    $colaboradores = \App\Colaborador::all();
+
+    $datos_portada = null;
+    foreach($portadas AS $portada){
+        $datos_portada = $portada;
+    }
+
+    return view('index')
+        ->with("parametros",
+            [
+                "organizacion"=>$organizacion,
+                "portada"=>$datos_portada,
+                "colaboradores" => $colaboradores
+            ]);
 });
 
 // RUTAS PARA AUTENTICACION
@@ -34,6 +50,12 @@ Route::resource('usuario', 'UserController');
 
 //RUTAS PARA LOS PROGRAMAS
 Route::resource('admin/programa','org\ProgramaController');
+
+
+Route::resource('admin/portada','org\PortadaController');
+
+
+Route::resource('admin/voluntario','org\VoluntarioController');
 
 
 // RUTA PANTALLA PRINCIPAL DEL MANAGER

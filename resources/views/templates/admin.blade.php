@@ -43,7 +43,7 @@
         </div>
 
             <ul class="nav navbar-left navbar-brand" style="margin-left: 20px; color: #FF00BF;">
-                <li>EeasyManager(Fundacion no Calles)</li>
+                <li></li>
 
             </ul>
 
@@ -66,6 +66,8 @@
                 <li id="programa"><a href="/admin/programa"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Programas</a></li>
                 <li id="colaborador" ><a href="/admin/colaborador"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Coalboradores</a></li>
                 <li id="noticia"><a href="/admin/noticia"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Noticias</a></li>
+                <li id="portada"><a href="/admin/portada"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Portada</a></li>
+                <li id="voluntario"><a href="/admin/voluntario"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Voluntarios</a></li>
 
 
             </ul>

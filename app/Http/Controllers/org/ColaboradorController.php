@@ -95,7 +95,7 @@ class ColaboradorController extends Controller
         // open an image file
         $img = Image::make($file);
         // now you are able to resize the instance
-        $img->resize(320, 240);
+        $img->heighten(100);
         // and insert a watermark for example
         //$img->insert('public/watermark.png');
         // finally we save the image as a new file
